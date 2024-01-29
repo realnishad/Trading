@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Profit Calculator</h1>
+        <div class="calculator" id="shareCalculator">
+            <h2>Share Worth Calculator</h2>
+            <input type="number" id="initialQuantity" placeholder="Initial Quantity of Shares">
+            <input type="number" id="initialPrice" placeholder="Initial Price per Share">
+            <input type="number" id="finalQuantity" placeholder="Final Quantity of Shares">
+            <input type="number" id="finalPrice" placeholder="Final Price per Share">
+            <button onclick="calculateShareWorth()">Calculate</button>
+            <p id="shareResult"></p>
+        </div>
+
+        <div class="calculator" id="cagrCalculator">
+            <h2>CAGR Profit Potential Calculator</h2>
+            <input type="number" id="initialValue" placeholder="Initial Value of Stock">
+            <input type="number" id="cagr" placeholder="CAGR in Percentage">
+            <input type="number" id="years" placeholder="Number of Years">
+            <button onclick="calculateCAGR()">Calculate</button>
+            <p id="cagrResult"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
